@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ani{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: pink;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    animation: mot 6s infinite;
+}
+
+.a{
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, rgb(211, 113, 7), rgb(206, 77, 8));
+}
+.b{
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(45deg ,rgb(16, 234, 9),rgb(7, 11, 92));
+}
+
+@keyframes mot {
+    0%{
+        width: 200px;
+        height: 200px;
+    }
+
+    20%{
+        width: 200px;
+        height: 400px;
+    }
+
+    40%{
+        width: 200px;
+        height: 500px;
+    }
+
+    60%{
+        width: 90%;
+        height: 200px;
+    }
+}
+
+.sign{
+    position: relative;
+    backdrop-filter: blur(34px);
+    width: 60%;
+    height: calc(100% - 40%);
+    border: pink solid 5px;
+    border-radius: 20px;
+    box-shadow: 0 0 7px pink;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input,button{
+    width: 90%;
+    height: 2rem;
+    border: none;
+}
+h4{
+    padding: 1rem;
+}
+
+button:active{
+    background: black;
+    color: white;
+    transition: 0.8s;
+}

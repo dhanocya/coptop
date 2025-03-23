@@ -85,7 +85,6 @@ button:active{
 
 input{
     max-height: 3em;
-    max-width: 60vw;
     border: 2px solid gray;
     &:hover{
         box-shadow: 3px 4px 8px 4px black;

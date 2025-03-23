@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .ani{
@@ -83,6 +84,10 @@ button:active{
 }
 
 input{
-    max-height: 2em;
-    border: 1px solid gray;
+    max-height: 3em;
+    max-width: 60vw;
+    border: 2px solid gray;
+    &:hover{
+        box-shadow: 3px 4px 8px 4px black;
+    }
 }

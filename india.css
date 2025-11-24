@@ -56,7 +56,8 @@
 .sign{
     position: relative;
     backdrop-filter: blur(34px);
-    width: 60%;
+    width: 90%;
+    max-width: 900px;
     height: calc(100% - 40%);
     border: pink solid 5px;
     border-radius: 20px;
@@ -66,11 +67,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    animation: ani 5s infinite;
 }
 
 button{
     width: 90%;
-    height: 2rem;
+    height: 3em;
     border: none;
 }
 h4{
@@ -84,9 +87,16 @@ button:active{
 }
 
 input{
-    max-height: 3em;
+    height: 3em;
+    width: 90%;
     border: 2px solid gray;
     &:hover{
-        box-shadow: 3px 4px 8px 4px black;
+        box-shadow: 3px 4px 8px 4px rgb(249, 143, 143);
+    }
+}
+
+@keyframes ani {
+    0%{
+        border: solid rgb(254, 154, 171) 5px;
     }
 }

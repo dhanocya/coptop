@@ -62,13 +62,12 @@
     border: pink solid 5px;
     border-radius: 20px;
     box-shadow: 0 0 7px pink;
-
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     animation: ani 5s infinite;
+    display: none;
 }
 
 button{
@@ -99,4 +98,8 @@ input{
     0%{
         border: solid rgb(254, 154, 171) 5px;
     }
+}
+
+.active{
+    display: flex;
 }

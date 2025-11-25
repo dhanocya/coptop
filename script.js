@@ -1,14 +1,17 @@
-let signBtn = document.querySelector("a")
-let signTwo = document.querySelector(".sign-btn")
-let signForm = document.querySelectorAll(".sign")
-signBtn.addEventListener("click", () => {
-    signForm.forEach((val) =>{
-        val.classList.toggle("active")
-    })
-})
+let signBtn = document.querySelector("a");
+let signTwo = document.querySelector(".sign-btn");
+let signForms = document.querySelectorAll(".sign");
 
-signTwo.addEventListener("click", () => {
-    signForm.forEach((val) =>{
-        val.classList.toggle("active")
-    })
-})
+signBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    signForms.forEach((val) => {
+        val.classList.toggle("active");
+    });
+});
+
+signTwo.addEventListener("click", (e) => {
+    e.preventDefault(); 
+    signForms.forEach((val) => {
+        val.classList.toggle("active");
+    });
+});
